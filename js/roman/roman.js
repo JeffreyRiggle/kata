@@ -29,9 +29,9 @@ const convert = (num) => {
             return;
         }
 
-        if (num === n.value) {
+        if (remaining === n.value) {
             remaining = 0;
-            retVal = n.display;
+            retVal += n.display;
             return;
         }
 
