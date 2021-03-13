@@ -16,7 +16,9 @@ jobs:
       uses: actions/checkout@v1
     
     - name: Install
+      working-directory: js
       run: npm ci
 
     - name: Test
+      working-directory: js
       run: npm run test
