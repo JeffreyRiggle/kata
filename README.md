@@ -1,2 +1,2 @@
 # kata
-random code katas
+random code practice
