@@ -231,4 +231,134 @@ describe('roman numerals', () => {
             expect(res).toBe('XXXIX');
         });
     });
+
+    describe('when number is 40', () => {
+        beforeEach(() => {
+            res = convert(40);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('XL');
+        });
+    });
+
+    describe('when number is between 40 and 45', () => {
+        beforeEach(() => {
+            res = convert(42);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('XLII');
+        });
+    });
+
+    describe('when number is 45', () => {
+        beforeEach(() => {
+            res = convert(45);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('XLV');
+        });
+    });
+
+    describe('when number is 48', () => {
+        beforeEach(() => {
+            res = convert(48);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('XLVIII');
+        });
+    });
+
+    describe('when number is 50', () => {
+        beforeEach(() => {
+            res = convert(50);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('L');
+        });
+    });
+
+    describe('when number is 54', () => {
+        beforeEach(() => {
+            res = convert(54);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LIV');
+        });
+    });
+
+    describe('when number is 55', () => {
+        beforeEach(() => {
+            res = convert(55);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LV');
+        });
+    });
+
+    describe('when number is 57', () => {
+        beforeEach(() => {
+            res = convert(57);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LVII');
+        });
+    });
+
+    describe('when number is 60', () => {
+        beforeEach(() => {
+            res = convert(60);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LX');
+        });
+    });
+
+    describe('when number is 63', () => {
+        beforeEach(() => {
+            res = convert(63);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LXIII');
+        });
+    });
+
+    describe('when number is 66', () => {
+        beforeEach(() => {
+            res = convert(66);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LXVI');
+        });
+    });
+
+    describe('when number is 69', () => {
+        beforeEach(() => {
+            res = convert(69);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LXIX');
+        });
+    });
+
+    describe('when number is 80', () => {
+        beforeEach(() => {
+            res = convert(80);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('LXXX');
+        });
+    });
 });

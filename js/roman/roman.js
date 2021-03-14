@@ -10,6 +10,10 @@ const numerals = [
     {
         value: 10,
         display: 'X'
+    },
+    {
+        value: 50,
+        display: 'L'
     }
 ].reverse();
 
@@ -45,8 +49,10 @@ const convert = (num) => {
             larger = numerals[ind - 1];
         }
 
-        if (larger && (larger.value - n.value === remaining)) {
-            remaining = 0;
+        const largerDif = larger ? larger.value - n.value : 0;
+        const remDif = remaining - largerDif;
+        if (larger && ((largerDif === remaining) || (remDif > 0 && remDif < n.value && remaining > n.value * 2))) {
+            remaining = remDif;
             retVal += n.display + larger.display;
             return;
         }
