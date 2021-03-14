@@ -361,4 +361,94 @@ describe('roman numerals', () => {
             expect(res).toBe('LXXX');
         });
     });
+
+    describe('when number is 90', () => {
+        beforeEach(() => {
+            res = convert(90);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('XC');
+        });
+    });
+
+    describe('when number is 100', () => {
+        beforeEach(() => {
+            res = convert(100);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('C');
+        });
+    });
+
+    describe('when number is 123', () => {
+        beforeEach(() => {
+            res = convert(123);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('CXXIII');
+        });
+    });
+
+    describe('when number is 350', () => {
+        beforeEach(() => {
+            res = convert(350);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('CCCL');
+        });
+    });
+
+    describe('when number is 400', () => {
+        beforeEach(() => {
+            res = convert(400);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('CD');
+        });
+    });
+
+    describe('when number is 500', () => {
+        beforeEach(() => {
+            res = convert(500);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('D');
+        });
+    });
+
+    describe('when number is 777', () => {
+        beforeEach(() => {
+            res = convert(777);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('DCCLXXVII');
+        });
+    });
+
+    describe('when number is 900', () => {
+        beforeEach(() => {
+            res = convert(900);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('CM');
+        });
+    });
+
+    describe('when number is 1000', () => {
+        beforeEach(() => {
+            res = convert(1000);
+        });
+
+        it('should have the correct numeral', () => {
+            expect(res).toBe('M');
+        });
+    });
 });

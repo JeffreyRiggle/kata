@@ -14,6 +14,18 @@ const numerals = [
     {
         value: 50,
         display: 'L'
+    },
+    {
+        value: 100,
+        display: 'C'
+    },
+    {
+        value: 500,
+        display: 'D'
+    },
+    {
+        value: 1000,
+        display: 'M'
     }
 ].reverse();
 
