@@ -20,3 +20,33 @@ func TestPalindromeWithSpace(t *testing.T) {
 	assert := assert.New(t)
 	assert.True(IsPalindrome("madam im adam"), "It should not fail for valid palindromes")
 }
+
+func TestPalindromeWithCase(t *testing.T) {
+	assert := assert.New(t)
+	assert.True(IsPalindrome("Madam"), "It should not fail for valid palindromes")
+}
+
+func TestPalindromeWithApostrope(t *testing.T) {
+	assert := assert.New(t)
+	assert.True(IsPalindrome("Madam I'm Adam"), "It should not fail for valid palindromes")
+}
+
+func TestPalindromeWithComma(t *testing.T) {
+	assert := assert.New(t)
+	assert.True(IsPalindrome("Madam, I'm Adam"), "It should not fail for valid palindromes")
+}
+
+func TestPalindromeWithPeriod(t *testing.T) {
+	assert := assert.New(t)
+	assert.True(IsPalindrome("Madam, I'm Adam."), "It should not fail for valid palindromes")
+}
+
+func TestPalindromeWithExclaimation(t *testing.T) {
+	assert := assert.New(t)
+	assert.True(IsPalindrome("Madam, I'm Adam!"), "It should not fail for valid palindromes")
+}
+
+func TestPalindromeWithQuestion(t *testing.T) {
+	assert := assert.New(t)
+	assert.True(IsPalindrome("Madam, I'm Adam?"), "It should not fail for valid palindromes")
+}

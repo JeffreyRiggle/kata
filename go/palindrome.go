@@ -2,6 +2,7 @@ package practice
 
 import (
 	"strings"
+	"regexp"
 )
 
 func reverse(value string) string {
@@ -13,7 +14,8 @@ func reverse(value string) string {
 }
 
 func clean(value string) string {
-	return strings.ReplaceAll(value, " ", "")
+	exp := regexp.MustCompile(`[\s',\.!\?]`)
+	return exp.ReplaceAllString(strings.ToLower(value), "")
 }
 
 func IsPalindrome(value string) bool {
