@@ -15,3 +15,7 @@ jobs:
       - name: Build
         working-directory: rust
         run: cargo build --release --all-features
+
+      - name: Test
+        working-directory: rust
+        run: cargo test
