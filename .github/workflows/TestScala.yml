@@ -1,0 +1,14 @@
+name: BuildScala
+on: [push, pull_request]
+jobs:
+
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Test
+      working-directory: scala/practice
+      run: sbt test
